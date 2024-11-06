@@ -45,7 +45,7 @@
         async sendUrl() {
           try {
             // Send URL to the server
-            await fetch('/.netlify/functions/fetch-data', {
+            await fetch('/functions/fetch-data', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({ url: this.clientUrl })
